@@ -1,5 +1,5 @@
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -8,7 +8,7 @@
 body {
     display: flex;
     flex-direction: row;
-    font-size: 15px;
+    font-size: 13.2px;
 }
 
 .img-sidebar {
@@ -23,13 +23,22 @@ body {
     border: 1px solid grey;
     justify-items: left;
     width: 70%;
-    padding: 200px 40px 200px 35px;
+}
+
+.main-entrytext {
+    max-width: 80%;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+
+.text2 {
+    margin-top: 40px;
 }
 
 .main-form {
     min-width: 100%;
+    margin-top: 60px;
 }
-
 
 fieldset {
     display: block;
@@ -40,10 +49,25 @@ fieldset {
     border-image: none;
     padding-block: 0px;
     padding-inline: 0px;
+
+    box-shadow:
+        /* Top Shadow */
+        0 -8px 8px -8px rgba(0, 0, 0, 0.4),
+        /* offset-y, blur-radius, spread-radius */
+        /* Bottom Shadow */
+        0 8px 8px -8px rgba(0, 0, 0, 0.4);
+    margin-bottom: 15px;
+}
+
+.inside-form {
+    margin-top: 20px;
+    margin-left: 40px;
 }
 
 label {
     padding: 10px 0px 0px 0px;
+    color: rgb(105, 104, 104);
+    margin-bottom: 0.5px;
 }
 
 input {
@@ -51,13 +75,14 @@ input {
     padding: 10px;
     font-size: 15px;
     border-radius: 6px;
-    border: 0.5px solid grey;
+    border: 0.5px solid rgba(128, 128, 128, 0.452);
 }
 
 .all-inputs {
     display: flex;
     flex-direction: row;
-    max-width:75%;
+    max-width: 75%;
+    margin-bottom: 20px;
 }
 
 .form-inputs {
@@ -65,4 +90,22 @@ input {
     flex-direction: column;
     min-width: 50%;
     padding: 20px 40px 20px 0px;
+}
+
+button {
+    font-weight: bold;
+    font-size: larger;
+    color: white;
+    background-color: rgb(88, 109, 73, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-color: transparent;
+    min-width: 220px;
+    min-height: 50px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.button-stuff {
+    margin-left: 40px;
 }
