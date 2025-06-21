@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Norse-Font;
+  src: url(Norse-Bold.otf);
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
@@ -75,7 +80,7 @@ input {
     padding: 10px;
     font-size: 15px;
     border-radius: 6px;
-    border: 0.5px solid rgba(128, 128, 128, 0.452);
+    border: 0.5px solid #E5E7EB;
 }
 
 .all-inputs {
@@ -108,4 +113,36 @@ button {
 
 .button-stuff {
     margin-left: 40px;
+}
+
+.logo-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    background-color: rgba(0, 0, 0, 0.356);
+    width: 100%;
+    padding: 10px;
+}
+
+.logo-img {
+    width: auto;
+    height: 150px;
+}
+
+.logo-text {
+    font-family:"Norse-Font";
+    font-size: 100px;
+    color: white;
+}
+
+input[type="password"]:invalid {
+    border-color: red;
+    outline: none;
+}
+
+input:focus {
+    border-color: rgb(100, 148, 237);
+    outline: none;
 }
